@@ -3,10 +3,10 @@ layout: default
 ---
 {% include navheader.html %}
 
-{% include services.html %}
-{% include portfolio_grid.html %}
-{% include about.html %}
-{% include timeline.html %}
-{% include team.html %}
-{% include clients.html %}
-{% include contact.html %}
+{% if site.show_services %} {% include services.html %} {% endif %}
+{% if site.show_portfolio_grid %} {% include portfolio_grid.html %} {% endif %}
+{% if site.show_about %} {% include about.html %} {% endif %}
+{% if site.show_timeline %} {% include timeline.html %} {% endif %}
+{% if site.show_team %} {% include team.html %} {% endif %}
+{% if site.show_clients %} {% include clients.html %} {% endif %}
+{% if site.show_contact %} {% include contact.html %} {% endif %}
